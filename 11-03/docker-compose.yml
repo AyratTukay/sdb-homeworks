@@ -1,0 +1,41 @@
+version: '3.9'
+
+services:  
+  elasticsearch:
+    image: elasticsearch:8.14.3
+    volumes:
+      - ./configs/elasticsearch/config.yml:/usr/share/elasticsearch/config/elasticsearch.yml:ro
+    environment:
+      - "ES_JAVA_OPTS=-Xmx512m -Xms512m" # Ограничение памяти
+      - discovery.type=single-node
+    networks:
+      - elk
+    ports:
+      - "9200:9200"
+ 
+  logstash:
+    image: logstash:8.14.3
+    environment:
+      LS_JAVA_OPTS: "-Xmx512m -Xms512m"
+      XPACK_MONITORING_ENABLED: "false"
+      ES_HOST: "elasticsearch:9200"
+    volumes:
+      - ./configs/logstash/pipelines.yml:/usr/share/logstash/config/pipelines.yml:ro
+      - ./configs/logstash/pipelines:/usr/share/logstash/config/pipelines:ro
+    ports:
+      - "5044:5044/udp"
+    depends_on:
+      - elasticsearch
+
+  kibana:
+    image: kibana:8.14.3
+    depends_on:
+      - elasticsearch
+    volumes:
+      - ./configs/kibana/config.yml:/usr/share/kibana/config/kibana.yml:ro
+    ports:
+      - "5601:5601"
+
+networks:
+  elk:
+    driver: bridge
