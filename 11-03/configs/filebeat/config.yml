@@ -1,0 +1,14 @@
+filebeat.inputs:
+  - type: log
+    enabled: true
+    # Я запущу filebeat в докере и проброшу логи приложения по данному пути
+    paths:
+      - /usr/share/filebeat/access.log
+   
+   
+processors:
+  - drop_fields:
+      fields: ["beat", "input_type", "prospector", "input", "host", "agent"]
+
+output.logstash:
+  hosts: ["logstash:5044"]
