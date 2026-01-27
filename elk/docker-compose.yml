@@ -1,0 +1,64 @@
+version: '3.7'
+
+services:
+  elasticsearch:
+    image: elasticsearch:7.16.1
+    container_name: elasticsearch-tukaev
+    volumes:
+      - ./configs/elasticsearch/config.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+      # - ./docker_volumes/elasticsearch/data:/usr/share/elasticsearch/data
+      - elasticsearch-data:/usr/share/elasticsearch/data
+    environment:
+      CLUSTER.NAME: tukaev-cluster
+      ES_JAVA_OPTS: "-Xmx512m -Xms512m"
+      discovery.type: single-node
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+      
+
+  logstash:
+    image: logstash:7.16.1
+    volumes:
+      - ./configs/logstash/pipelines.yml:/usr/share/logstash/config/pipelines.yml
+      - ./configs/logstash/pipelines:/usr/share/logstash/config/pipelines
+      - ./nginxlogs:/usr/share/logstash/config/nginx
+    environment:
+      LS_JAVA_OPTS: "-Xmx512m -Xms512m"
+    ports:
+      - "5044:5044"
+ #     - "5044:5044/udp"
+    depends_on:
+      - elasticsearch
+
+  kibana:
+    image: kibana:7.16.1
+    depends_on:
+      - elasticsearch
+    volumes:
+      - ./configs/kibana/config.yml:/usr/share/kibana/config/kibana.yml
+    ports:
+      - "5601:5601"
+    environment:
+      - ELASTICSEARCH_HOSTS=http://elasticsearch:9200
+
+  beats:
+    image: elastic/filebeat:7.16.2
+    volumes:
+      - ./configs/filebeat/config.yml:/usr/share/filebeat/filebeat.yml
+      - ./nginxlogs:/usr/share/filebeat/config/nginx
+    depends_on:
+      - logstash
+      - elasticsearch
+      - kibana
+
+  nginx:
+    image: nginx:stable-alpine3.21-perl
+    ports:
+      - "8080:80"
+    volumes:
+     - ./nginxlogs:/var/log/nginx
+
+volumes:
+  elasticsearch-data:
+    driver: local
