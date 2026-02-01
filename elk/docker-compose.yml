@@ -27,7 +27,8 @@ services:
       LS_JAVA_OPTS: "-Xmx512m -Xms512m"
     ports:
       - "5044:5044"
- #     - "5044:5044/udp"
+      - "5001:5000"
+      - "9600:9600"
     depends_on:
       - elasticsearch
 

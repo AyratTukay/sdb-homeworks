@@ -3,9 +3,9 @@ filebeat.inputs:
     enabled: true
     paths:
       - /usr/share/filebeat/config/nginx/access.log
-processors:
-  - drop_fields:
-    fields: ["beat", "input_type", "prospector", "input", "host", "agent"]
+# processors:
+#  - drop_fields:
+#   fields: ["beat", "input_type", "prospector", "input", "host", "agent"]
 
 output.logstash:
   hosts: ["logstash:5044"]

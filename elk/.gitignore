@@ -6,5 +6,5 @@ docker_volumes/
 *.pyc
 *.log
 .python-version
-
+readme.txt
 .DS_Store
