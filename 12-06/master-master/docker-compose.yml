@@ -1,0 +1,29 @@
+version: '3.7'
+services:
+  master:
+    image: mysql:8.4
+    container_name: compose_mysql_master1
+    env_file: .env
+    volumes:
+      - ./master/master1.sql:/docker-entrypoint-initdb.d/start.sql
+    command:
+      - --server-id=1
+      - --log-bin=mysql-bin
+      - --binlog_format=ROW
+    ports:
+      - 3409:3306
+
+  slave:
+    image: mysql:8.4
+    container_name: compose_mysql_master2
+    env_file: .env
+    volumes:
+      - ./master/master2.sql:/docker-entrypoint-initdb.d/start.sql
+    command:
+      - --server-id=2
+      - --log-bin
+      - --binlog_format=ROW
+    ports:
+      - 3410:3306
+
+ 
