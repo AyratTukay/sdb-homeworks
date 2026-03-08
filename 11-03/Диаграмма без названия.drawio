@@ -14,7 +14,7 @@
           <mxGeometry height="185" width="185" x="419" y="55" as="geometry" />
         </mxCell>
         <mxCell id="ZzozVEZ0u-lR4jDPnlq1-2" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;div&gt;VM2&lt;/div&gt;&lt;div&gt;зона В&lt;/div&gt;&lt;div&gt;сервер nginx&lt;/div&gt;" vertex="1">
-          <mxGeometry height="185" width="185" x="419" y="255" as="geometry" />
+          <mxGeometry height="185" width="185" x="419" y="270" as="geometry" />
         </mxCell>
         <mxCell id="BxVcvkVx0-GTFccTt4SE-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value=" &lt;a href=&quot;https://cloud.yandex.com/docs/application-load-balancer/concepts/target-group&quot; rel=&quot;nofollow&quot;&gt;Target Group&lt;/a&gt;" vertex="1">
           <mxGeometry height="30" width="100" x="471.5" y="480" as="geometry" />
@@ -33,10 +33,10 @@
         <mxCell id="BxVcvkVx0-GTFccTt4SE-9" edge="1" parent="1" source="BxVcvkVx0-GTFccTt4SE-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" target="BxVcvkVx0-GTFccTt4SE-5">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="BxVcvkVx0-GTFccTt4SE-28" edge="1" parent="1" source="BxVcvkVx0-GTFccTt4SE-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;" target="BxVcvkVx0-GTFccTt4SE-26">
+        <mxCell id="BxVcvkVx0-GTFccTt4SE-28" edge="1" parent="1" source="ZzozVEZ0u-lR4jDPnlq1-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=0.984;exitY=0.589;exitDx=0;exitDy=0;exitPerimeter=0;" target="BxVcvkVx0-GTFccTt4SE-26">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="640" y="400" />
+              <mxPoint x="640" y="379" />
               <mxPoint x="640" y="580" />
             </Array>
           </mxGeometry>
@@ -80,8 +80,11 @@
         <mxCell id="BxVcvkVx0-GTFccTt4SE-25" edge="1" parent="1" source="BxVcvkVx0-GTFccTt4SE-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="BxVcvkVx0-GTFccTt4SE-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="BxVcvkVx0-GTFccTt4SE-26" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;h1 class=&quot;dc-doc-page-title dc-doc-leading-page__title&quot;&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Application Load Balancer&lt;/span&gt;&lt;/span&gt;&lt;/font&gt;&lt;/h1&gt;" vertex="1">
+        <mxCell id="BxVcvkVx0-GTFccTt4SE-26" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;h1 class=&quot;dc-doc-page-title dc-doc-leading-page__title&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Application Load Balancer&lt;/span&gt;&lt;/span&gt;&lt;/font&gt;&lt;/h1&gt;" vertex="1">
           <mxGeometry height="120" width="120" x="760" y="490" as="geometry" />
+        </mxCell>
+        <mxCell id="BxVcvkVx0-GTFccTt4SE-29" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;div&gt;VM7&lt;/div&gt;&lt;div&gt;bastion host&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="130" x="462.5" y="540" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
