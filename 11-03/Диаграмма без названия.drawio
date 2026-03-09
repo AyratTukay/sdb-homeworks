@@ -1,34 +1,34 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (X11; Linux x86_64; rv:148.0) Gecko/20100101 Firefox/148.0" version="29.6.1">
   <diagram name="Страница-1" id="aN3jXvQrJLfGvmSglLbU">
-    <mxGraphModel dx="1040" dy="1853" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2050" dy="2425" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="BxVcvkVx0-GTFccTt4SE-4" parent="1" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;" value="" vertex="1">
-          <mxGeometry height="535" width="535" x="260" y="-20" as="geometry" />
+          <mxGeometry height="535" width="535" x="496" y="-1040" as="geometry" />
         </mxCell>
         <mxCell id="BxVcvkVx0-GTFccTt4SE-27" edge="1" parent="1" source="ZzozVEZ0u-lR4jDPnlq1-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="BxVcvkVx0-GTFccTt4SE-26">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="ZzozVEZ0u-lR4jDPnlq1-1" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;div&gt;VM1&lt;/div&gt;&lt;div&gt;зона А&lt;/div&gt;&lt;div&gt;сервер nginx&lt;/div&gt;" vertex="1">
-          <mxGeometry height="185" width="185" x="419" y="55" as="geometry" />
+          <mxGeometry height="185" width="185" x="655" y="-978" as="geometry" />
         </mxCell>
         <mxCell id="ZzozVEZ0u-lR4jDPnlq1-2" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;div&gt;VM2&lt;/div&gt;&lt;div&gt;зона В&lt;/div&gt;&lt;div&gt;сервер nginx&lt;/div&gt;" vertex="1">
-          <mxGeometry height="185" width="185" x="419" y="270" as="geometry" />
+          <mxGeometry height="185" width="185" x="655" y="-763" as="geometry" />
         </mxCell>
         <mxCell id="BxVcvkVx0-GTFccTt4SE-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value=" &lt;a href=&quot;https://cloud.yandex.com/docs/application-load-balancer/concepts/target-group&quot; rel=&quot;nofollow&quot;&gt;Target Group&lt;/a&gt;" vertex="1">
-          <mxGeometry height="30" width="100" x="471.5" y="480" as="geometry" />
+          <mxGeometry height="30" width="100" x="707.5" y="-553" as="geometry" />
         </mxCell>
         <mxCell id="BxVcvkVx0-GTFccTt4SE-5" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;div&gt;VM3&lt;/div&gt;&lt;div&gt;Prometheus&lt;/div&gt;" vertex="1">
-          <mxGeometry height="120" width="120" x="70" y="228" as="geometry" />
+          <mxGeometry height="120" width="120" x="306" y="-805" as="geometry" />
         </mxCell>
         <mxCell id="BxVcvkVx0-GTFccTt4SE-8" edge="1" parent="1" source="BxVcvkVx0-GTFccTt4SE-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.25;entryDx=0;entryDy=0;" target="BxVcvkVx0-GTFccTt4SE-5">
           <mxGeometry relative="1" as="geometry">
-            <mxPoint x="230" y="250" as="targetPoint" />
+            <mxPoint x="466" y="-783" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="BxVcvkVx0-GTFccTt4SE-6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;Node Exporter&lt;/div&gt;&lt;div&gt;&lt;a href=&quot;https://github.com/martin-helmich/prometheus-nginxlog-exporter&quot;&gt;Nginx Log Exporter&lt;/a&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="451.5" y="170" as="geometry" />
+          <mxGeometry height="60" width="120" x="687.5" y="-863" as="geometry" />
         </mxCell>
         <mxCell id="BxVcvkVx0-GTFccTt4SE-9" edge="1" parent="1" source="BxVcvkVx0-GTFccTt4SE-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.75;entryDx=0;entryDy=0;" target="BxVcvkVx0-GTFccTt4SE-5">
           <mxGeometry relative="1" as="geometry" />
@@ -36,55 +36,55 @@
         <mxCell id="BxVcvkVx0-GTFccTt4SE-28" edge="1" parent="1" source="ZzozVEZ0u-lR4jDPnlq1-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.75;entryDx=0;entryDy=0;exitX=0.984;exitY=0.589;exitDx=0;exitDy=0;exitPerimeter=0;" target="BxVcvkVx0-GTFccTt4SE-26">
           <mxGeometry relative="1" as="geometry">
             <Array as="points">
-              <mxPoint x="640" y="379" />
-              <mxPoint x="640" y="580" />
+              <mxPoint x="876" y="-654" />
+              <mxPoint x="876" y="-453" />
             </Array>
           </mxGeometry>
         </mxCell>
         <mxCell id="BxVcvkVx0-GTFccTt4SE-7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="&lt;div&gt;Node Exporter&lt;/div&gt;&lt;div&gt;&lt;a href=&quot;https://github.com/martin-helmich/prometheus-nginxlog-exporter&quot;&gt;Nginx Log Exporter&lt;/a&gt;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="451.5" y="370" as="geometry" />
+          <mxGeometry height="60" width="120" x="687.5" y="-644" as="geometry" />
         </mxCell>
         <mxCell id="BxVcvkVx0-GTFccTt4SE-10" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;div&gt;VM4&lt;/div&gt;&lt;div&gt;Grafana&lt;/div&gt;" vertex="1">
-          <mxGeometry height="120" width="120" x="70" y="410" as="geometry" />
+          <mxGeometry height="120" width="120" x="306" y="-623" as="geometry" />
         </mxCell>
         <mxCell id="BxVcvkVx0-GTFccTt4SE-12" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#f8cecc;strokeColor=#b85450;" value="&lt;div&gt;VM5&lt;/div&gt;&lt;div&gt;Elasticsearch&lt;/div&gt;" vertex="1">
-          <mxGeometry height="120" width="120" x="860" y="140" as="geometry" />
+          <mxGeometry height="120" width="120" x="1096" y="-893" as="geometry" />
         </mxCell>
         <mxCell id="BxVcvkVx0-GTFccTt4SE-21" edge="1" parent="1" source="BxVcvkVx0-GTFccTt4SE-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="BxVcvkVx0-GTFccTt4SE-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="BxVcvkVx0-GTFccTt4SE-13" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="filebeat" vertex="1">
-          <mxGeometry height="60" width="120" x="451.5" y="60" as="geometry" />
+          <mxGeometry height="60" width="120" x="687.5" y="-973" as="geometry" />
         </mxCell>
         <mxCell id="BxVcvkVx0-GTFccTt4SE-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;" value="filebeat" vertex="1">
-          <mxGeometry height="60" width="120" x="450" y="260" as="geometry" />
+          <mxGeometry height="60" width="120" x="687.5" y="-750" as="geometry" />
         </mxCell>
         <mxCell id="BxVcvkVx0-GTFccTt4SE-16" edge="1" parent="1" source="BxVcvkVx0-GTFccTt4SE-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.033;entryY=0.667;entryDx=0;entryDy=0;entryPerimeter=0;" target="BxVcvkVx0-GTFccTt4SE-12">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="BxVcvkVx0-GTFccTt4SE-17" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;div&gt;VM6&lt;/div&gt;&lt;div&gt;Kibana&lt;/div&gt;" vertex="1">
-          <mxGeometry height="120" width="120" x="860" y="320" as="geometry" />
+          <mxGeometry height="120" width="120" x="1096" y="-713" as="geometry" />
         </mxCell>
         <mxCell id="BxVcvkVx0-GTFccTt4SE-23" edge="1" parent="1" source="BxVcvkVx0-GTFccTt4SE-12" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="BxVcvkVx0-GTFccTt4SE-17" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="460" y="330" as="sourcePoint" />
-            <mxPoint x="510" y="280" as="targetPoint" />
+            <mxPoint x="696" y="-703" as="sourcePoint" />
+            <mxPoint x="746" y="-753" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="BxVcvkVx0-GTFccTt4SE-24" edge="1" parent="1" source="BxVcvkVx0-GTFccTt4SE-10" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="BxVcvkVx0-GTFccTt4SE-5" value="">
           <mxGeometry height="50" relative="1" width="50" as="geometry">
-            <mxPoint x="400" y="330" as="sourcePoint" />
-            <mxPoint x="450" y="280" as="targetPoint" />
+            <mxPoint x="636" y="-703" as="sourcePoint" />
+            <mxPoint x="686" y="-753" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="BxVcvkVx0-GTFccTt4SE-25" edge="1" parent="1" source="BxVcvkVx0-GTFccTt4SE-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" target="BxVcvkVx0-GTFccTt4SE-1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="BxVcvkVx0-GTFccTt4SE-26" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;h1 class=&quot;dc-doc-page-title dc-doc-leading-page__title&quot;&gt;&lt;font style=&quot;font-size: 13px;&quot;&gt;&lt;span&gt;&lt;span style=&quot;font-weight: normal;&quot;&gt;Application Load Balancer&lt;/span&gt;&lt;/span&gt;&lt;/font&gt;&lt;/h1&gt;" vertex="1">
-          <mxGeometry height="120" width="120" x="760" y="490" as="geometry" />
+          <mxGeometry height="120" width="120" x="996" y="-543" as="geometry" />
         </mxCell>
         <mxCell id="BxVcvkVx0-GTFccTt4SE-29" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d5e8d4;strokeColor=#82b366;" value="&lt;div&gt;VM7&lt;/div&gt;&lt;div&gt;bastion host&lt;/div&gt;" vertex="1">
-          <mxGeometry height="130" width="130" x="462.5" y="540" as="geometry" />
+          <mxGeometry height="130" width="130" x="698.5" y="-493" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
